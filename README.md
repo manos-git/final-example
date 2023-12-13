@@ -19,5 +19,4 @@ https://dev.to/franciscomendes10866/nextjs-and-graphql-the-perfect-combination-f
 For use at BaseModels WinServer IIS (G:\Development\VScode\Projects\dokimes\NEXT\my-app)
 *************
 TODO
--fIX bUG FOR login
 - Connect with Firebird and replace all db routines
