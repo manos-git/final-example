@@ -6,6 +6,11 @@ import { z } from 'zod';
 import type { User } from '@/app/lib/definitions';
 import { authConfig } from './auth.config';
 
+// firebird way
+//const { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } = require('./lib/firebirdDb');
+import { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } from './app/lib/firebirdDb';
+
+/* postgres
 async function getUser(email: string): Promise<User | undefined> {
   try {
     const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
@@ -15,6 +20,32 @@ async function getUser(email: string): Promise<User | undefined> {
     throw new Error('Failed to fetch user.');
   }
 }
+*/
+/* firebird */
+async function getUser(email: string): Promise<User | undefined> {
+  var user: any;
+  try  {
+    const dbconn = await getConnection();
+    const sql = `SELECT * FROM users WHERE email=${email}`;
+    //const user = await sql<User>`SELECT * FROM users WHERE email=${email}`;
+    dbconn.query(sql, (err:any, res:any) => {
+      if (err) {
+        throw new Error('Erro na consulta ó Padrón');
+        disconnectDb(dbconn);
+      } else {
+        user== res.rows[0];
+        disconnectDb(dbconn);
+      }
+    });
+    return user;
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    throw new Error('Failed to fetch user.');
+  }
+}
+  
+  
+
 
 export const { auth, signIn, signOut } = NextAuth({
   ...authConfig,

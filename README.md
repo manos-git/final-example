@@ -15,8 +15,45 @@ Password: 123456
 Other examples 
 https://github.com/vercel/next-learn/tree/main
 https://dev.to/franciscomendes10866/nextjs-and-graphql-the-perfect-combination-for-full-stack-development-18l7
+
+https://www.youtube.com/watch?v=FKZAXFjxlJI
+https://github.com/adrianhajdin/anime_vault
+https://github.com/mertthesamael/lalasia  --> structure nextjs
 **********
 For use at BaseModels WinServer IIS (G:\Development\VScode\Projects\dokimes\NEXT\my-app)
-*************
+Firebird example 1 --> G:\Development\VScode\Projects\dokimes\FireBird\cm-firebird-srv
+Firebird example 2 -->G:\Development\React\Projects\firebird-srv\controller\user.js
+\*************
 TODO
 - Connect with Firebird and replace all db routines
+-- api routes --> https://refine.dev/blog/next-js-api-routes/#typing-response-data
+
+
+
+
+
+
+************************************
+return new Promise((resolve, reject) => {
+    fb.attach(this.options, (err, db) => {
+
+        if (err) {
+            // throw new Error('Erro na conexión á DB');
+            reject('Erro na consulta ó Padrón');
+        }
+
+        db.query(query, params, (err, res) => {
+
+            if (err) {
+                // throw new Error('Erro na consulta ó Padrón');
+                reject('Erro na consulta ó Padrón');
+            }
+            console.log('firebird.service - Response DB ================', res);
+
+            db.detach();
+            // return res
+            resolve(res);
+        });
+    });
+});
+************************************

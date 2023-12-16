@@ -16,3 +16,21 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+
+
+
+body {
+  background-color: #000;
+}
+
+.red-gradient {
+  background: linear-gradient(92deg, #ff5956 2.87%, #ee1e38 96.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  color-scheme: dark;
+}
