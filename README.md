@@ -57,3 +57,68 @@ return new Promise((resolve, reject) => {
     });
 });
 ************************************
+  const fetchData = async () => { 
+	try { 
+	Const conn = await connect({ 
+			Database: 'C:\my_database\my_database.fdb', 
+			User: 'SYSDBA', 
+			Password: 'masterkey' }); 
+			Const stmt = await conn.execSQL(`SELECT * FROM my_table`); // Fetch all records using the `stmt.get()` 
+			Const records = []; 
+			while ((record = await stmt.get()) !== null) { 
+				records.push({ id: record.get('id'), name: record.get('name'), email: record.get('email') }); 
+				} 
+			Await stmt.close(); 
+			await conn.close(); 
+			SetData(records); 
+			setMessage('Data fetched successfully! '); 
+	
+	} catch (error) { 
+		SetIsError(true); 
+		setMessage(`Error: ${error}`); 
+		console.error(error); } 
+	finally { 
+	Await conn?.close(); 
+	await stmt?.close();
+    } 
+***************************************    
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const fetchData = async () => {
+  try {
+    const conn = await connect({
+      database: 'C:\my_database\my_database.fdb',
+      user: 'SYSDBA',
+      password: 'masterkey',
+    });
+
+ const stmt = await conn.execSQL('SELECT * FROM my_table');
+    const records = await stmt.get() as IRecordSet; 
+    const users: User[] = records.parse(record => ({ 
+        // Define a callback function that maps each record to a `User` object using its properties.
+         Id: record.get('id'), 
+         name: record.get('name'), 
+         email: record.get('email'),
+          })); 
+        await stmt.close(); 
+        await conn.close(); 
+        setData(users); 
+        setMessage('Data fetched successfully! '); 
+        } 
+        catch (error) 
+        { // Handle errors as before... } 
+        finally { // Close the connection and statement objects as before... }
+};
+*************************************** 
+
+
+if i like to use ... const firebird = require('objection').Model.knex('firebird');   and i want to parse the user as type like   export type  User = {
+  id: string;
+  name: string;
+  email: string;} how can i do it?
+
+  *************************************** 

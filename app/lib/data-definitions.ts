@@ -3,11 +3,20 @@
 // For simplicity of teaching, we're manually defining these types.
 // However, these types are generated automatically if you're using an ORM such as Prisma.
 // copied from definitions.ts for postgress
-export type User = {
+
+// FIREBIRD DATA ------ interfcae
+
+export type  User = {
   id: string;
   name: string;
   email: string;
+  //image_url: string;
+
+  //USER_ID: string;
+  dispname: string;
+  //UNAME: string;
   password: string;
+  rolelevel: BigInteger;
 };
 
 export type Customer = {
