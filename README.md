@@ -121,4 +121,11 @@ if i like to use ... const firebird = require('objection').Model.knex('firebird'
   name: string;
   email: string;} how can i do it?
 
-  *************************************** 
+*************************************** 
+Trick 
+- result of sql query of backend, to server through getServerSideProps,  -->   https://github.com/vercel/next.js/discussions/15066
+
+https://uploadthing.com/   --> https://www.youtube.com/watch?v=OyxDGWgNJMc
+*************************************** 
+
+ui/invoices/table.tsx --> fetchFilteredInvoices

@@ -1,7 +1,7 @@
-import { generateYAxis } from '@/app/lib/utils';
+import { generateYAxis, getMonthName } from '@/app/lib/utils';
 import { CalendarIcon } from '@heroicons/react/24/outline';
 import { lusitana } from '@/app/ui/fonts';
-import { fetchRevenue } from '@/app/lib/data';
+import { fetchRevenue } from '@/app/lib/data-cm';
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -13,11 +13,12 @@ export default async function RevenueChart() {
   const revenue = await fetchRevenue();
 
   const chartHeight = 350;
-  const { yAxisLabels, topLabel } = generateYAxis(revenue);
 
   if (!revenue || revenue.length === 0) {
     return <p className="mt-4 text-gray-400">No data available.</p>;
   }
+
+  const { yAxisLabels, topLabel } = generateYAxis(revenue);
 
   return (
     <div className="w-full md:col-span-4">
@@ -47,14 +48,14 @@ export default async function RevenueChart() {
               ></div>
               {/* x-axis */}
               <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
-                {month.month}
+                {getMonthName(Number(month.month))}
               </p>
             </div>
           ))}
         </div>
         <div className="flex items-center pb-2 pt-6">
           <CalendarIcon className="h-5 w-5 text-gray-500" />
-          <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
+          <h3 className="ml-2 text-sm text-gray-500 ">Total of Models per Month at 2022</h3>
         </div>
       </div>
     </div>

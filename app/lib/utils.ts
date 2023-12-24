@@ -21,6 +21,14 @@ export const formatDateToLocal = (
   return formatter.format(date);
 };
 
+// console.log(getMonthName(1)); // Jan
+export const getMonthName = (monthNumber:number) => {
+  const date = new Date();
+  date.setMonth(monthNumber - 1);
+  return date.toLocaleString('en-US', { month: 'short' });
+}
+
+
 export const generateYAxis = (revenue: Revenue[]) => {
   // Calculate what labels we need to display on the y-axis
   // based on highest record and in 1000s

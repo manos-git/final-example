@@ -1,4 +1,4 @@
-
+// NOT IN USE
 //import config from 'dotenv';
 require('dotenv').config();
 //import moment from 'moment';
@@ -20,10 +20,10 @@ const options = {
     port : 3050,
     database: 'G://Development//Delphi2007//Projects//CM//Data//CM.GDB',     //  G://Development//DB//CM_TEST/CM.GDB
     user : 'MANOS',
-    password: 'capt@!n'
-    //lowercase_keys : false,
+    password: 'capt@!n',
+    lowercase_keys : true,
     //role : null,
-    //pageSize : 4096    
+    pageSize : 4096,
     //retryConnectionInterval = 1000; // reconnect interval in case of connection drop
     //blobAsText = false; // set to true to get blob as text, only affects blob subtype 1
     //encoding = 'UTF-8'; // default encoding for connection is UTF-8       
@@ -34,7 +34,7 @@ const options = {
 
  //  dbpool.destroy(); PROSOXH TODO
 
- 
+
 async function getConnection() {
    return await new Promise((resolve, reject) => {
     pool.get(async function(err, db)   {
@@ -46,6 +46,20 @@ async function getConnection() {
     })
   });
 };
+
+async function runQuery(queryString) {
+  return new Promise(async function(resolve, reject) {
+      var db = await getConnection();
+      db.query(queryString, function (err, rows, fields) {
+          if (err) {
+            disconnectDb(db);
+            return reject(err);
+          }
+          disconnectDb(db);
+          resolve(rows);
+      });
+  });
+}
 
 
 // export 
@@ -105,11 +119,13 @@ async function commitTransaction(transact) {
     });
 };
 
+
 //exports.databaseWork = databaseWork;
 //module.exports.databaseWork = databaseWork;
 
 module.exports = {
   getConnection,
+  runQuery,
   beginTransaction,
   commitTransaction,
   disconnectDb

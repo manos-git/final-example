@@ -8,8 +8,10 @@ import { authConfig } from './auth.config';
 
 // firebird way
 //const { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } = require('./lib/firebirdDb');
-import { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } from './app/lib/firebirdDb';
-import type { User } from '@/app/lib/data-definitions';
+//import { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } from './app/lib/firebirdDb';
+
+import { getConn, queryRun } from './app/lib/firebird';
+import type { User } from '@/app/lib/definitions-cm';
 //import interface { User } from '@/app/lib/data-definitions';
 
 
@@ -68,14 +70,12 @@ interface UserIntf  {
   
 
 async function getUser(email: string, pass: string): Promise<User | undefined> {
-  var user: User | undefined;
-  //var rec: User | undefined;
+  var oneUser: User; // | undefined;  //SWSTO
   try  {    
-    const dbconn = await getConnection();
+    const db = await getConn();
     console.log('Connected to DB!');
-    const sql = `SELECT USER_ID as id, DISPNAME, UNAME as name, '' as email, UPASS, ROLE_LEVEL FROM users WHERE UNAME='${email}' AND UPASS= '${pass}'`;
-    /*  */
-    
+    const selSql = `SELECT USER_ID as id, DISPNAME, UNAME as name_, '' as email, UPASS as password, ROLE_LEVEL FROM users WHERE UNAME='${email}' AND UPASS= '${pass}'`;
+    /*      
     const getloginuser = async () => {
       return new Promise<User|undefined>((resolve, reject)=> {
         dbconn.query(sql, (err:any, res:any) => {
@@ -96,8 +96,20 @@ async function getUser(email: string, pass: string): Promise<User | undefined> {
         })
       });
     };
-
     return await getloginuser();  
+    */
+        
+        //return await queryRun(db, sql)  ;
+       
+          const row = await queryRun(db, selSql)  ;
+          if (row && row !== null && row.length>0)  {      
+            oneUser = row.map(( usr: { id: string;   name_: string;  email: string;   password: string}) => ({      
+              name: usr.name_,  
+              ...usr,                      
+            }));       
+            return  oneUser; 
+          }        
+
     
     /*
     let pr = new Promise((resolve, reject)=> {

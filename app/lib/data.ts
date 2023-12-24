@@ -5,7 +5,7 @@ import {
   InvoiceForm,
   InvoicesTable,
   LatestInvoiceRaw,
-  User,
+  //User,
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
@@ -227,6 +227,7 @@ export async function fetchFilteredCustomers(query: string) {
   }
 }
 
+/*
 export async function getUser(email: string) {
   try {
     const user = await sql`SELECT * FROM users WHERE email=${email}`;
@@ -236,3 +237,4 @@ export async function getUser(email: string) {
     throw new Error('Failed to fetch user.');
   }
 }
+*/

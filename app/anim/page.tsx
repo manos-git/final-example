@@ -1,3 +1,4 @@
+// http://localhost:3000/anim
 import LoadMore from "../ui/anim/LoadMore";
 import { fetchAnime } from "./action";
 

@@ -1,4 +1,5 @@
-import { fetchFilteredCustomers } from '@/app/lib/data';
+import { fetchFilteredCustomers } from '@/app/lib/data-cm';
+import { CustomersTableType, FormattedCustomersTable } from '@/app/lib/definitions-cm';
 import CustomersTable from '@/app/ui/customers/table';
 import { Metadata } from 'next';
 
@@ -14,13 +15,17 @@ export default async function Page({
     page?: string;
   };
 }) {
-  const query = searchParams?.query || '';
+  const query = searchParams?.query || 'ΑΒ';
 
-  const customers = await fetchFilteredCustomers(query);
+  const customers  = await fetchFilteredCustomers(query);
 
   return (
     <main>
-      <CustomersTable customers={customers} />
+      
+      {customers && 
+       <CustomersTable customers={customers} />
+      }
+        
     </main>
   );
 }

@@ -19,6 +19,8 @@ export type  User = {
   rolelevel: BigInteger;
 };
 
+export type ErrorCM = {errCode: string, errMsg: string};
+
 export type Customer = {
   id: string;
   name: string;
@@ -37,7 +39,7 @@ export type Invoice = {
 };
 
 export type Revenue = {
-  month: string;
+  month: string;  // reserved word in firebird
   revenue: number;
 };
 
