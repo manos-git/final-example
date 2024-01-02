@@ -17,6 +17,7 @@ export type  User = {
   //UNAME: string;
   password: string;
   rolelevel: BigInteger;
+  role:  'su'| 'admin' | 'company' | 'entoleas' | 'model' | 'user';      //string;  
 };
 
 export type ErrorCM = {errCode: string, errMsg: string};

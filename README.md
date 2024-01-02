@@ -13,6 +13,7 @@ Password: 123456
 
 ------------
 Other examples 
+https://github.com/safak/nextadmin/tree/completed
 https://github.com/vercel/next-learn/tree/main
 https://dev.to/franciscomendes10866/nextjs-and-graphql-the-perfect-combination-for-full-stack-development-18l7
 
@@ -25,7 +26,6 @@ Firebird example 1 --> G:\Development\VScode\Projects\dokimes\FireBird\cm-firebi
 Firebird example 2 -->G:\Development\React\Projects\firebird-srv\controller\user.js
 \*************
 TODO
-- Connect with Firebird and replace all db routines
 -- api routes --> https://refine.dev/blog/next-js-api-routes/#typing-response-data
 
 

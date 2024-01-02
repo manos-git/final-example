@@ -15,6 +15,10 @@ import type { User } from '@/app/lib/definitions-cm';
 //import interface { User } from '@/app/lib/data-definitions';
 
 
+// import jwt from 'jsonwebtoken';
+
+
+
 
 /* postgres
 async function getUser(email: string): Promise<User | undefined> {
@@ -54,7 +58,7 @@ async function getUser(email: string, pass: string): Promise<User | undefined> {
 }
 */  
 
-
+/*
 interface UserIntf  {
   id: string;
   name: string;
@@ -66,7 +70,7 @@ interface UserIntf  {
   UPASS: string;
   ROLE_LEVEL: BigInteger;
 };
-
+*/
   
 
 async function getUser(email: string, pass: string): Promise<User | undefined> {
@@ -188,13 +192,22 @@ async function getUser(email: string, pass: string): Promise<User | undefined> {
 //+++++++++++++++++++++++++++++++
 
 
-  
+// https://authjs.dev/guides/providers/credentials  
 
 
 export const { auth, signIn, signOut } = NextAuth({
+  //session: { strategy: "jwt", maxAge: 1* 24 * 60 * 60 ,  },  //MANOS  // 1 day
   ...authConfig,
   providers: [
     Credentials({
+      //credentials: {
+      //  username: { label: "Username", type: "text", placeholder: "jsmith" },
+      //  password: {  label: "Password", type: "password" }
+      //},
+      //profile(profile) {
+      //  return { role: profile.role ?? "user", ... }
+      //},
+
       async authorize(credentials) {
         const parsedCredentials = z
           //.object({ email: z.string().email(), password: z.string().min(6) })
@@ -207,6 +220,7 @@ export const { auth, signIn, signOut } = NextAuth({
           const user = await getUser(email, password);
           if (!user) return null;
 
+          // if (user && bcrypt.compareSync(password, user.passwordHash))  apo paradeigma , alloiws to pio katw
           const passwordsMatch = true; //await bcrypt.compare(password, user.password);
           if (passwordsMatch) return user;
         }
@@ -216,4 +230,56 @@ export const { auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
+  
+  
+  
+  /*
+  session: {
+    strategy: 'jwt',
+    maxAge: 1 * 24 * 60 * 60, // 1 day
+  },
+
+  callbacks: {
+    jwt: async ({ token, user }) => {
+      if (user) {
+        token.email = user.data.auth.email;
+        token.username = user.data.auth.userName;
+        token.user_type = user.data.auth.userType;
+        token.accessToken = user.data.auth.token;
+      }
+
+      return token;
+    },
+    session: ({ session, token, user }) => {
+      if (token) {
+        session.user.email = token.email;
+        session.user.username = token.userName;
+        session.user.accessToken = token.accessToken;
+      }
+      return session;
+    },
+  },
+*/
+ // ADD ADDITIONAL INFORMATION TO SESSION
+ /*
+callbacks: {
+  // async jwt({ token, user }) {
+  //   if (user) {
+  //     token.username = user.username;
+  //     token.img = user.img;
+  //   }
+  //   return token;
+  // },
+   async session({ session, token }) {
+     if (token) {
+       session.user.username = token.username;
+       session.user.img = token.img;
+     }
+     return session;
+   },
+ },
+*/
+
+
+
 });

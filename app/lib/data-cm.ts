@@ -366,7 +366,8 @@ export async function fetchFilteredCustomers(query: string) {
   var customers: FormattedCustomersTable[]; // | undefined;  //SWSTO
   try {
     //const data = await sql<CustomersTableType>`
-    const selSQL =`SELECT first 30 CUSTOMER_ID as id, FIRM_NAME as name, PHONE1 as phone, email, COALESCE(photoid, '') as image_url,
+    const selSQL =//`SELECT first 30 CUSTOMER_ID as id, FIRM_NAME as name, PHONE1 as phone, email, '/models/'||lower(COALESCE(photoid, ''))||'.jpg' as image_url,
+                  `SELECT first 30 CUSTOMER_ID as id, FIRM_NAME as name, PHONE1 as phone, email, '/'||cast(trunc(rand() * 3 + 1) as integer)||'.jpg' as image_url,
                    123 AS total_invoices,  345 AS total_pending,  678 AS total_paid
                    FROM customers
                    WHERE firm_name LIKE '${`${query}%`}' OR email LIKE '${`%${query}%`}'                   

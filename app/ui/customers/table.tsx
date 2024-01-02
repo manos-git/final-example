@@ -9,8 +9,12 @@ import {
   FormattedCustomersTable,
 } from '@/app/lib/definitions-cm';
 
+import {imageKitLoader} from '@/image-loader'
+
 //import { useState } from "react";
 //import fallback from  '/fallback-image.png';
+
+//import type { ImageLoaderProps } from 'next/image';
 
 
 export default async function CustomersTable({
@@ -20,6 +24,7 @@ export default async function CustomersTable({
 }) {
   //const fallBackSrc = fallback.src; 
   //const [imageError, setImageError] = useState(false);
+
 
   return (
     <div className="w-full">
@@ -41,10 +46,12 @@ export default async function CustomersTable({
                       <div>
                         <div className="mb-2 flex items-center">
                           <div className="flex items-center gap-3">
-                            <Image                            
+                            <Image 
+                             
+                              loader=  {imageKitLoader}                       
                               //src={imageError ? fallBackSrc : customer.image_url}
-                              //src={customer.image_url}
-                              src={'/fallback-image.png'}
+                              src={customer.image_url}
+                              //src={'/fallback-image.png'}
                               className="rounded-full"
                               alt={`${customer.name}'s profile picture`}
                               width={28}
@@ -103,8 +110,9 @@ export default async function CustomersTable({
                         <div className="flex items-center gap-3">
                           {customer.image_url.length > 0 && (
                             <Image
-                              //src={customer.image_url}
-                              src={'/fallback-image.png'}
+                                loader={imageKitLoader}        
+                              src={customer.image_url}
+                              //src={'/fallback-image.png'}
                               className="rounded-full"
                               alt={`${customer.name}'s profile picture`}
                               width={28}
