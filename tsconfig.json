@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
     "scripts/seed.js"
-, "pages/api/askapi.js"  ],
+, "pages/api/askapi.js", "logger.js", "app/500.js", "app/not-found.js"  ],
   "exclude": ["node_modules"]
 }

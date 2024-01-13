@@ -1,6 +1,7 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import { Metadata } from 'next';
+import { SessionProvider } from "next-auth/react";
 
 export const metadata: Metadata = {
   title: {
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
     default: 'CM Dashboard',
   },
   description: 'The official CM web app',
-  metadataBase: new URL('http://localhost:3000'),
+  metadataBase: new URL(process.env?.NEXTAUTH_URL||'http://localhost:8502'),  
 };
 export default function RootLayout({
   children,
@@ -17,7 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        {/* <SessionProvider> */} {/* </SessionProvider>  */}
+       
+        {children}
+       
+        
+        
+        </body>
     </html>
   );
 }

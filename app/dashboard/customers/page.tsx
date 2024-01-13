@@ -3,6 +3,9 @@ import { CustomersTableType, FormattedCustomersTable } from '@/app/lib/definitio
 import CustomersTable from '@/app/ui/customers/table';
 import { Metadata } from 'next';
 
+
+//import { Session } from 'inspector';
+
 export const metadata: Metadata = {
   title: 'Customers',
 };
@@ -15,13 +18,14 @@ export default async function Page({
     page?: string;
   };
 }) {
+
   const query = searchParams?.query || 'ΑΒ';
 
   const customers  = await fetchFilteredCustomers(query);
 
   return (
     <main>
-      
+
       {customers && 
        <CustomersTable customers={customers} />
       }

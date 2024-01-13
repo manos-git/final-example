@@ -18,6 +18,18 @@ input[type='number']::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
-
+/*  PROFILE-AVATAR.TSX converted to tailwind
+.user-profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background-color: brown;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 50%;
+  font-weight: 800;
+}
+*/
 

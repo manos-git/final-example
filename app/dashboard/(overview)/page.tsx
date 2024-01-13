@@ -8,11 +8,21 @@ import {
   LatestInvoicesSkeleton,
   CardsSkeleton,
 } from '@/app/ui/skeletons';
-import Rightbar from './rightbar/page';
 
-export default async function Page() {
+
+import { logger } from "@/logger"; // our logger import
+import { auth } from '@/auth';
+
+
+
+
+export default async function Page() { 
+    logger.info("Dashboard Page called "); // calling our logger
+    const session = await auth();
   return (
     <main>
+        session=  {JSON.stringify(session)}     
+            
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
       </h1>

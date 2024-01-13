@@ -24,6 +24,8 @@ import { invoices } from './placeholder-data';
 import { number, string } from 'zod';
 import LatestInvoices from '../ui/dashboard/latest-invoices';
 
+import { logger } from "@/logger"; // our logger import
+
 
 export async function fetchRevenue() {
   // Add noStore() here prevent the response from being cached.
@@ -101,6 +103,7 @@ export async function fetchLatestInvoices() {
           ...invoice,
           amount: formatCurrency( invoice.amount ),
         })); 
+        logger.info("fetchLatestInvoices called "); // calling our logger
       return  latestInvoices; 
     }
 
@@ -419,3 +422,6 @@ export async function getUser(email: string) {
     throw new Error('Failed to fetch user.');
   }
 }
+
+
+

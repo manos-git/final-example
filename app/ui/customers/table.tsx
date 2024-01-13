@@ -17,10 +17,13 @@ import {imageKitLoader} from '@/image-loader'
 //import type { ImageLoaderProps } from 'next/image';
 
 
+
+
 export default async function CustomersTable({
   customers,
 }: {
   customers: FormattedCustomersTable[];
+  
 }) {
   //const fallBackSrc = fallback.src; 
   //const [imageError, setImageError] = useState(false);

@@ -120,6 +120,8 @@ export async function deleteInvoice(id: string) {
   }
 }
 
+
+// SignIn 
 export async function authenticate(
   prevState: string | undefined,
   formData: FormData,
@@ -135,6 +137,6 @@ export async function authenticate(
           return 'Something went wrong.';
       }
     }
-    throw error;
+    throw error; //otherwise not redirect
   }
 }

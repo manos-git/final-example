@@ -1,4 +1,5 @@
 // https://nextjs.org/docs/app/building-your-application/routing/route-handlers
+// http://localhost:8502/api/hello
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 

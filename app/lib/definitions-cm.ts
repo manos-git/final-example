@@ -4,20 +4,36 @@
 // However, these types are generated automatically if you're using an ORM such as Prisma.
 // copied from definitions.ts for postgress
 
+
 // FIREBIRD DATA ------ interfcae
+/*
+enum UserRole {
+  SU
+  ADMIN
+  COMPANY
+  ..
+
+}
+*/
 
 export type  User = {
-  id: string;
-  name: string;
-  email: string;
+  id:  string; 
+  name: string;          // --> dispname: string;
+  email: string;  
+  //emailVerified: BigInteger;
+  image:  string;
   //image_url: string;
-
   //USER_ID: string;
-  dispname: string;
+  //dispname: string;
   //UNAME: string;
   password: string;
-  rolelevel: BigInteger;
+  //rolelevel: number;
   role:  'su'| 'admin' | 'company' | 'entoleas' | 'model' | 'user';      //string;  
+
+  // apo to next-auth.d.ts file mou
+  accessToken?: string;
+  refreshToken?: string;
+  accessTokenExpires?: number;
 };
 
 export type ErrorCM = {errCode: string, errMsg: string};

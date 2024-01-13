@@ -1,4 +1,4 @@
-export  default  data = [
+export  const  data = [
     {
       id: 1,
       todo: "Do something nice for someone I care about",

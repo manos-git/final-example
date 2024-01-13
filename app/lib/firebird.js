@@ -4,9 +4,9 @@ const Firebird = require('node-firebird');
 //const { default: LatestInvoices } = require("../ui/dashboard/latest-invoices");
 
 const options = {
-    host: '127.0.0.1', //'192.168.100.36', //"host" : 'externalddns.ddns.net',  127.0.0.1
-    port : 3050,
-    database: 'G://Development//Delphi2007//Projects//CM//Data//CM.GDB',     //  G://Development//DB//CM_TEST/CM.GDB
+    host: process.env.CMWEBAPP_DB_HOST || '127.0.0.1', //'192.168.100.36', //"host" : 'externalddns.ddns.net',  127.0.0.1
+    port :process.env.CMWEBAPP_DB_PORT || 3050,
+    database: process.env.CMWEBAPP_DB_DATABASE || 'G://Development//Delphi2007//Projects//CM//Data//CM.GDB',     //  G://Development//DB//CM_TEST/CM.GDB
     user : 'MANOS',
     password: 'capt@!n',
     lowercase_keys : true,

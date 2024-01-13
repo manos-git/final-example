@@ -3,8 +3,13 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts';
 import Image from 'next/image';
+import desktop from  '../public/hero-desktop.png';  
+import mobile from  '../public/hero-mobile.png';  
+
+import { logger } from "@/logger"; // our logger import
 
 export default function Page() {
+  logger.info("Home Page called "); // calling our logger
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
@@ -31,14 +36,14 @@ export default function Page() {
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
           <Image
-            src="/hero-desktop.png"
+            src=  {desktop}   //"/hero-desktop.png"
             width={1000}
             height={760}
             alt="Screenshots of the dashboard project showing desktop version"
             className="hidden md:block"
           />
           <Image
-            src="/hero-mobile.png"
+            src=  {mobile}   //"/hero-mobile.png"
             width={560}
             height={620}
             alt="Screenshot of the dashboard project showing mobile version"

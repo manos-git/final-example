@@ -14,7 +14,7 @@
             "name": "Next.js: debug client-side",
             "type": "chrome",
             "request": "launch",
-            "url": "http://localhost:3000"
+            "url": "http://localhost:8502" // 3000
           },
           {
             "name": "Next.js: debug full stack",
@@ -27,12 +27,5 @@
               "action": "debugWithChrome"
             }
           },
-          {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000",
-            "webRoot": "${workspaceFolder}"
-        }
     ]
 }
