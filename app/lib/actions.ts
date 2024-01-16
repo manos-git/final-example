@@ -1,11 +1,14 @@
 'use server';
 
-import { z } from 'zod';
-import { sql } from '@vercel/postgres';
+import { undefined, z } from 'zod';
+//import { sql } from '@vercel/postgres';
 import { revalidatePath } from 'next/cache';
 import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
+import { getConn,  queryRun, statmentExec, closeConn } from './firebird';
+
+
 
 const FormSchema = z.object({
   id: z.string(),
@@ -34,6 +37,7 @@ export type State = {
   message?: string | null;
 };
 
+
 export async function createInvoice(prevState: State, formData: FormData) {
   // Validate form fields using Zod
   const validatedFields = CreateInvoice.safeParse({
@@ -57,10 +61,10 @@ export async function createInvoice(prevState: State, formData: FormData) {
 
   // Insert data into the database
   try {
-    await sql`
-      INSERT INTO invoices (customer_id, amount, status, date)
-      VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
-    `;
+    //sqlIns = ` INSERT INTO invoices (customer_id, amount, status, date)  VALUES (${customerId}, ${amountInCents}, ${status}, ${date}) `;
+    const sqlIns = ` INSERT INTO invoices (customer_id, amount, status, date)  VALUES (?, ?,?,?) `;
+    const db = await getConn();    
+    await statmentExec(db, sqlIns, [customerId, amountInCents, status, date] )  ;
   } catch (error) {
     // If a database error occurs, return a more specific error.
     return {
@@ -95,15 +99,13 @@ export async function updateInvoice(
   const amountInCents = amount * 100;
 
   try {
-    await sql`
-      UPDATE invoices
-      SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
-      WHERE id = ${id}
-    `;
+    //await sql`UPDATE invoices  SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status} WHERE id = ${id} `;
+    const sqlUpd = `UPDATE invoices  SET customer_id = ?, amount = ?, status = ? WHERE id = ?`;
+    const db = await getConn();    
+    await statmentExec(db, sqlUpd, [customerId, amountInCents, status, id] )  ;
   } catch (error) {
     return { message: 'Database Error: Failed to Update Invoice.' };
   }
-
   revalidatePath('/dashboard/invoices');
   redirect('/dashboard/invoices');
 }
@@ -112,7 +114,11 @@ export async function deleteInvoice(id: string) {
   // throw new Error('Failed to Delete Invoice');
 
   try {
-    await sql`DELETE FROM invoices WHERE id = ${id}`;
+    //await sql`DELETE FROM invoices WHERE id = ${id}`;
+    const sqlDel = `DELETE FROM invoices WHERE id = ?`;
+    const db = await getConn();    
+    await statmentExec(db, sqlDel, [id] )  ;
+
     revalidatePath('/dashboard/invoices');
     return { message: 'Deleted Invoice' };
   } catch (error) {

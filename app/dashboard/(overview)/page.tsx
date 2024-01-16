@@ -18,7 +18,7 @@ import { auth } from '@/auth';
 
 export default async function Page() { 
     logger.info("Dashboard Page called "); // calling our logger
-    const session = await auth();
+    const session = await auth();    
   return (
     <main>
         session=  {JSON.stringify(session)}     

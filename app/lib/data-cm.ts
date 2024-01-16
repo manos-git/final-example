@@ -1,4 +1,4 @@
-import { sql } from '@vercel/postgres';
+//import { sql } from '@vercel/postgres';
 //import { getConnection,  disconnectDb, runQuery } from './firebirdDb';
 import { getConn,  queryRun } from './firebird';
 
@@ -19,7 +19,8 @@ import { ErrorCM,
   FormattedCustomersTable, 
   User,
   Revenue, 
-  InvoicesTable } from './definitions-cm';
+  InvoicesTable, 
+  Invoice} from './definitions-cm';
 import { invoices } from './placeholder-data';
 import { number, string } from 'zod';
 import LatestInvoices from '../ui/dashboard/latest-invoices';
@@ -319,12 +320,16 @@ export async function fetchInvoicesPages(query: string) {
     throw new Error('Failed to fetch total number of invoices.');
   }
 }
-
+ 
+/* apenergopoihmeno , exoun ftiaxtei se firebird, xvris pinakes, atestarista, htan se vercel postgresql*/
 export async function fetchInvoiceById(id: string) {
   noStore();
+  var invoice: InvoiceForm[]; // Invoice;
+  //var invoiceone:  Invoice;
   try {
-    const data = await sql<InvoiceForm>`
-      SELECT
+    const selSQL =
+    //const data = await sql<InvoiceForm>
+     `SELECT
         invoices.id,
         invoices.customer_id,
         invoices.amount,
@@ -332,8 +337,10 @@ export async function fetchInvoiceById(id: string) {
       FROM invoices
       WHERE invoices.id = ${id};
     `;
+    const db = await getConn();
 
-    const invoice = data.rows.map((invoice) => ({
+    const rows = await queryRun(db, selSQL)  ;
+    invoice = rows.map((invoice: { amount: number; }) => ({
       ...invoice,
       // Convert amount from cents to dollars
       amount: invoice.amount / 100,
@@ -346,23 +353,29 @@ export async function fetchInvoiceById(id: string) {
   }
 }
 
+/* den exei elextei, exoun ftiaxtei se firebird,  atestarista, htan se vercel postgresql*/
 export async function fetchCustomers() {
   try {
-    const data = await sql<CustomerField>`
-      SELECT
-        id,
-        name
+    var customers :CustomerField[];
+    //const data     ;/* = await sql<CustomerField>
+    const selSQL =` SELECT FIRST 100
+        customer_id as id,
+        firm_name as name
       FROM customers
       ORDER BY name ASC
     `;
+    const db = await getConn();
+    const rows = await queryRun(db, selSQL)  ;
+    //const customers = data.rows;
 
-    const customers = data.rows;
-    return customers;
+    return rows; //customers;
   } catch (err) {
     console.error('Database Error:', err);
     throw new Error('Failed to fetch all customers.');
   }
 }
+
+
 
 export async function fetchFilteredCustomers(query: string) {
   noStore();  

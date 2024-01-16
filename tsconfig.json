@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/lib/placeholder-data.js",
-    "scripts/seed.js"
-, "pages/api/askapi.js", "logger.js", "app/500.js", "app/not-found.js"  ],
+    "scripts/seed.js",
+    "pages/api/askapi.js", "logger.js", "app/500.js", "app/not-found.js",
+    "next-auth.d.ts",  ],     //types/
   "exclude": ["node_modules"]
 }

@@ -147,8 +147,9 @@ if i like to use ... const firebird = require('objection').Model.knex('firebird'
 *************************************** 
 Trick 
 - result of sql query of backend, to server through getServerSideProps,  -->   https://github.com/vercel/next.js/discussions/15066
-
-https://uploadthing.com/   --> https://www.youtube.com/watch?v=OyxDGWgNJMc
+- 
+- https://uploadthing.com/   --> https://www.youtube.com/watch?v=OyxDGWgNJMc
+- node-firebird  -->  https://habr.com/ru/articles/760000/
 *************************************** 
 
 ui/invoices/table.tsx --> fetchFilteredInvoices
@@ -327,3 +328,10 @@ CCREATE TABLE AUTH_USERS
 
 CREATE INDEX IDX_AUTH_USERS_ID ON AUTH_USERS (USER_ID);
 ***********************************
+
+
+But, add AUTH_URL to .env and then solved.
+https://stackoverflow.com/questions/77547870/is-there-special-function-to-call-for-updating-session-in-the-newest-beta-next
+
+https://medium.com/@uriser/authentication-in-next-js-with-auth-js-nextauth-5-b74e3ae18ab8
+resend for email

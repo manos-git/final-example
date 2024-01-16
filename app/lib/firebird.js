@@ -1,7 +1,8 @@
-
 //const fs = require('fs');
+const { error } = require("console");
 const Firebird = require('node-firebird');
 //const { default: LatestInvoices } = require("../ui/dashboard/latest-invoices");
+
 
 const options = {
     host: process.env.CMWEBAPP_DB_HOST || '127.0.0.1', //'192.168.100.36', //"host" : 'externalddns.ddns.net',  127.0.0.1
@@ -21,6 +22,7 @@ const options = {
 
 function getConn() {
     const p = new Promise(function(resolve, reject) {
+        //if (!Firebird) throw new Error('No Firebird!!!!!!');
         Firebird.attach(options, function(err, db) {
             if (err) {
                 reject(err);
@@ -58,6 +60,21 @@ function queryRun(db, sql, params=[])  {
     return p;
 }
 
+function closeConn(db) {
+    const p = new Promise(function(resolve, reject)  {
+        //try {
+        db.detach(function(err) {
+            if (err) {
+                reject(err);
+                return;
+            }
+            resolve();
+            //return;
+        });    
+    });
+    return p;
+};
+
 /*
 async function main() {
     // データベースに接続
@@ -90,4 +107,5 @@ module.exports = {
     getConn,
     statmentExec,
     queryRun,
+    closeConn,
   }

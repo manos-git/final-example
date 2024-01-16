@@ -16,18 +16,14 @@ export const authConfig = {
   secret: process.env.NEXTAUTH_SECRET,
   //debug: process.env.NODE_ENV === "development",
   callbacks: {
-    
-    async signIn({ user, account, email, profile, credentials }) {
-      return true;
-    },
-
+   // async signIn({ user, credentials }) {
+   //   return true;
+   // },
     async authorized({ auth, request: { nextUrl } }) {
-
       //console.log('middleware - withAuth - callbacks - authorized');
       //console.log('req: ', req);
       //console.log('token: ', token);
-
-      const isLoggedIn = !!auth?.user;
+      const isLoggedIn =  !!auth?.user;
       const isOnDashboard = nextUrl.pathname.startsWith('/dashboard');
       if (isOnDashboard) {
         if (isLoggedIn) return true;

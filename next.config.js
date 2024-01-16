@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = { 
-  env: {
-    SESSION_MAX_AGE: process.env.SESSION_MAX_AGE,
-  },
+  //env: {
+  //  SESSION_MAX_AGE: process.env.SESSION_MAX_AGE,
+  //},
   images: {
     //formats: ['image/avif', 'image/webp'],    
     //minimumCacheTTL: 60,  // cache optimized images for 60 seconds    

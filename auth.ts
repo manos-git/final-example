@@ -1,4 +1,4 @@
-    //import 'server-only';  // manos
+    import 'server-only';  // manos
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
     import GoogleProvider from 'next-auth/providers/google'; // manos
@@ -13,9 +13,28 @@ import { authConfig } from './auth.config';
 //const { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } = require('./lib/firebirdDb');
 //import { getConnection,  beginTransaction,  commitTransaction,   disconnectDb } from './app/lib/firebirdDb';
 
-import { getConn, queryRun } from './app/lib/firebird';
+import { getConn, queryRun, closeConn } from './app/lib/firebird';
 import type { User } from '@/app/lib/definitions-cm';
-import { getUserAuthById } from './app/lib/data-cm-authuser';
+//import { getUserAuthById } from './app/lib/data-cm-authuser';
+import { logger } from "@/logger"; // our logger import
+
+
+//testing
+const options = {
+  host: process.env.CMWEBAPP_DB_HOST || '127.0.0.1', //'192.168.100.36', //"host" : 'externalddns.ddns.net',  127.0.0.1
+  port :process.env.CMWEBAPP_DB_PORT || 3050,
+  database: process.env.CMWEBAPP_DB_DATABASE || 'G://Development//Delphi2007//Projects//CM//Data//CM.GDB',     //  G://Development//DB//CM_TEST/CM.GDB
+  user : 'MANOS',
+  password: 'capt@!n',
+  lowercase_keys : true,
+  //role : null,
+  pageSize : 4096,    
+  //retryConnectionInterval = 1000; // reconnect interval in case of connection drop
+  //blobAsText = false; // set to true to get blob as text, only affects blob subtype 1
+  //encoding = 'UTF-8'; // default encoding for connection is UTF-8       
+};
+
+
 
 // import FirebirdAdapter from './app/lib/adapter-fb';
 //import interface { User } from '@/app/lib/data-definitions';
@@ -197,13 +216,50 @@ async function getUser(email: string, pass: string): Promise<User | undefined> {
 // https://authjs.dev/guides/providers/credentials  
 //import { getIP } from '@/app/libutilities';
 
+//***** AUTH USERS *****/
+export async function getUserLogin(email : string, pass:string): Promise<User | undefined> {
+  var oneUser: User; // o User einai dhlvmenos sto  app\lib\definitions-cm.ts  & sto  next-auth.d.ts
+  try  {    
+    logger.info("trying connect to aythenticte the user "); // calling our logger
+    logger.info(options);
+    const db = await getConn().catch((e)=> {logger.error(e)});
+    logger.info("connected to db! "); // calling our logger
+    //console.log('Connected to DB!');
+    const selSql = `SELECT id, name, email, image, password, role, display_name FROM auth_users WHERE email='${email}' AND PASSword= '${pass}'`;
+
+    const row = await queryRun(db, selSql)  ;
+    await closeConn(db); //.then(() => {logger.info("Closed db! ")}).catch((err)=> {logger.error("Error on db detach. ")});
+    if (row && row !== null && row.length>0)  {      
+      oneUser = { id: row[0].id,  name: row[0].name,  email: row[0].email,  // {dispname: row[0].DISPNAME,
+         password: row[0].password,  image:row[0].image, role: row[0].role
+         //,  accessToken: 'string', refreshToken: 'string', accessTokenExpires: 1
+      };
+      return  oneUser; 
+    } else {logger.info("error on credentials"); }; // calling our logger       
+
+//      return  oneUser; 
+//    } else {
+//       return undefined;
+//    }
+
+  } catch (error) {
+    console.error('Failed to fetch user:', error);
+    logger.error("error on connecting to aythenticte the user " + error); // calling our logger
+    throw new Error('Failed to fetch user.');
+  }
+}
+
+
+
 export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
   //adapter:  FirebirdAdapter(), //  AuthFirebirdAdapter(),
-  //session: { strategy: "jwt", maxAge: 1* 24 * 60 * 60 ,  },  //MANOS  // 1 day
+  //session: { strategy: "jwt", maxAge: 3* 24 * 60 * 60 ,  },  //MANOS  // 3 days
+  //session: { strategy: "jwt", maxAge:  4 * 60 * 60  },  // // 4 hours
+  session: { strategy: "jwt", maxAge:  4 * 60  },  // 240 secont
   //session: {  strategy: 'database',   maxAge: 1, generateSessionToken: () => generateId().token(), },  // process.env.SESSION_MAX_AGE
   ...authConfig,
 
-  callbacks: {  // TA CALLBACKS YPARXOUN KAI STO uth.config.js kai GINONTAI MERGE
+  callbacks: {  // TA CALLBACKS YPARXOUN KAI STO auth.config.js kai GINONTAI MERGE
     /*
     async session ({ session, token, user })  {
       console.log({         sessionToken: session,      });      
@@ -215,13 +271,18 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
     },
     */
 
-    //jwt: async ({ token, user, session, account, profile }) => {
-      async jwt ({ token, user, session })  {
-        
-       // 2 EDW NA TO KANW OPWS STO PARADEIGMA  --> https://blog.stackademic.com/next-js-13-authentication-with-nextauth-js-app-router-typescript-641058805bc3
+      //jwt: async ({ token, user, session, account, profile }) => {
+      // the processing of JWT occurs before handling sessions. 
+      async jwt ({ token, user, session, account, profile })  {
+        console.log('user --->   ', user);
+        console.log('token --->   ', token);
+        console.log('session --->   ', session);
         
       if (!token.sub)  return token;
+
       try {
+        
+        /*
         //edw xtypaei AN TO VALV STO auth.config.js 
         const existingUser = await getUserAuthById(token.sub);
         if (!existingUser)  return token;
@@ -233,6 +294,15 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
           token.role = existingUser.role;
           token.id = existingUser.id;
         }     
+      */
+        if (user) {  
+          token.accessToken = user.accessToken;
+          token.refreshToken = user.refreshToken;
+          token.accessTokenExpires = user.accessTokenExpires;
+          token.role = user.role;
+          token.id = user.id;
+        }
+
 
 
       } catch (error) {
@@ -248,15 +318,16 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
       //  The session receives the token from JWT
       async session({ session, token, user }) {
         console.log("session callback ", { token, user, session });
-
-        return {
+        //expires: session.expires.toISOString(),
+            
+        return {             
           ...session,
-          user: {
+          user: {           
             ...session.user,
+            id:token.id as string, 
+            role:token.role as string,
             accessToken: token.accessToken as string,
             refreshToken: token.refreshToken as string,
-            //role: token.role,
-            //id: token.id,
           },
           error: token.error,
         };
@@ -277,18 +348,19 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
       async authorize(credentials) {
         const parsedCredentials = z
           //.object({ email: z.string().email(), password: z.string().min(6) })
-          .object({ email: z.string(), password: z.string().min(4) })
+          .object({ email: z.string().min(4), password: z.string().min(4) })
           .safeParse(credentials);
 
         if (parsedCredentials.success) {
           const { email, password } = parsedCredentials.data;
            
-          const user = await getUser(email, password);    //-- > EDW NA XTYPAW TO AUT_USERS
-          if (!user) return null;
+          //const user = await getUser(name, password);    //-- > EDW NA XTYPAW TO AUT_USERS
+          const userLogIn = await getUserLogin(email, password);
+          if (!userLogIn) return null;
 
-          // if (user && bcrypt.compareSync(password, user.passwordHash))  apo paradeigma , alloiws to pio katw
+          // if (userLogIn && bcrypt.compareSync(password, userLogIn.passwordHash))  apo paradeigma , alloiws to pio katw
           const passwordsMatch = true; //await bcrypt.compare(password, user.password);
-          if (passwordsMatch) return user;
+          if (passwordsMatch) return userLogIn;
         }
 
         console.log('Invalid credentials');

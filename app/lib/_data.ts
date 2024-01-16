@@ -1,3 +1,5 @@
+/* not using , instend replaced by data-cm.ts file
+
 import { sql } from '@vercel/postgres';
 import {
   CustomerField,
@@ -226,6 +228,8 @@ export async function fetchFilteredCustomers(query: string) {
     throw new Error('Failed to fetch customer table.');
   }
 }
+
+*/
 
 /*
 export async function getUser(email: string) {
