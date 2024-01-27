@@ -74,7 +74,7 @@ export async function fetchLatestInvoices() {
   noStore();
   var latestInvoices: LatestInvoiceRaw[]; // | undefined;  //SWSTO
   try { 
-    const selSQL= `SELECT first 5 i.PARAS_ID as id, i.PARAS_NUM as name, i.PARAS_DATETIME as image_url ,  
+    const selSQL= `SELECT first 5 i.iss_main_id as id, i.PARAS_NUM as name, '/' as image_url ,  
                    c.FIRM_NAME as email, GROSS_TOT_VAL as amount     
                    FROM ISSUE_MAIN i
                    JOIN CUSTOMERS C ON C.CUSTOMER_ID= i.CUST_ID

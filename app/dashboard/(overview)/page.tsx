@@ -11,17 +11,17 @@ import {
 
 
 import { logger } from "@/logger"; // our logger import
-import { auth } from '@/auth';
+//import { auth } from '@/auth';
 
 
 
 
 export default async function Page() { 
     logger.info("Dashboard Page called "); // calling our logger
-    const session = await auth();    
+    //const session = await auth();    
   return (
     <main>
-        session=  {JSON.stringify(session)}     
+        {/*session=  {JSON.stringify(session)}     */}
             
       <h1 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Dashboard
@@ -43,6 +43,7 @@ export default async function Page() {
           <LatestInvoices />
         </Suspense>        
       </div>
+ 
 
       {/*
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">

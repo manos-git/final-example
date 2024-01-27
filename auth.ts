@@ -2,7 +2,7 @@
 import NextAuth from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
     import GoogleProvider from 'next-auth/providers/google'; // manos
-//import bcrypt from 'bcrypt';
+import bcrypt from 'bcrypt';
 //import { sql } from '@vercel/postgres';
     import type { Session } from 'next-auth/types';  //manos
 import { unknown, z } from 'zod';
@@ -220,12 +220,12 @@ async function getUser(email: string, pass: string): Promise<User | undefined> {
 export async function getUserLogin(email : string, pass:string): Promise<User | undefined> {
   var oneUser: User; // o User einai dhlvmenos sto  app\lib\definitions-cm.ts  & sto  next-auth.d.ts
   try  {    
-    logger.info("trying connect to aythenticte the user "); // calling our logger
-    logger.info(options);
+    logger.info(`trying connect to aythenticate the user with '${email}'`); // calling our logger
+    //logger.info(options);
     const db = await getConn().catch((e)=> {logger.error(e)});
-    logger.info("connected to db! "); // calling our logger
+    logger.info("[getUserLogin]-->  connected to db! "); // calling our logger
     //console.log('Connected to DB!');
-    const selSql = `SELECT id, name, email, image, password, role, display_name FROM auth_users WHERE email='${email}' AND PASSword= '${pass}'`;
+    const selSql = `SELECT id, name, email, image, password, role, display_name FROM auth_users WHERE email='${email}' AND PASSword= '${pass}' and USER_ID<>0`;
 
     const row = await queryRun(db, selSql)  ;
     await closeConn(db); //.then(() => {logger.info("Closed db! ")}).catch((err)=> {logger.error("Error on db detach. ")});
@@ -247,15 +247,40 @@ export async function getUserLogin(email : string, pass:string): Promise<User | 
     logger.error("error on connecting to aythenticte the user " + error); // calling our logger
     throw new Error('Failed to fetch user.');
   }
-}
+};
+
+export async function getUserByEmail(email : string): Promise<User | undefined> {
+  var oneUser: User; // o User einai dhlvmenos sto  app\lib\definitions-cm.ts  & sto  next-auth.d.ts
+  try  {    
+    logger.info(`trying connect to aythenticate the user with email '${email}'`); // calling our logger
+    //logger.info(options);
+    const db = await getConn().catch((e)=> {logger.error(e)});
+    logger.info("[getUserByEmail] --> connected to db! "); // calling our logger
+    //console.log('Connected to DB!');
+    const selSql = `SELECT id, name, email, image, password, role, display_name FROM auth_users WHERE email='${email}' and USER_ID<>0`;
+
+    const row = await queryRun(db, selSql)  ;
+    await closeConn(db); //.then(() => {logger.info("Closed db! ")}).catch((err)=> {logger.error("Error on db detach. ")});
+    if (row && row !== null && row.length>0)  {      
+      oneUser = { id: row[0].id,  name: row[0].name,  email: row[0].email,  // {dispname: row[0].DISPNAME,
+         password: row[0].password,  image:row[0].image, role: row[0].role
+         //,  accessToken: 'string', refreshToken: 'string', accessTokenExpires: 1
+      };
+      return  oneUser; 
+    } else {logger.info("error on credentials"); }; // calling our logger       
+  } catch (error) {
+    //console.error('Failed to fetch user:', error);
+    logger.error("error on connecting to aythenticte the user " + error); // calling our logger
+    throw new Error('Failed to fetch user.');
+  }
+};
 
 
-
-export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
+export const { handlers: { GET, POST }, auth, signIn, signOut, update } = NextAuth({
   //adapter:  FirebirdAdapter(), //  AuthFirebirdAdapter(),
   //session: { strategy: "jwt", maxAge: 3* 24 * 60 * 60 ,  },  //MANOS  // 3 days
   //session: { strategy: "jwt", maxAge:  4 * 60 * 60  },  // // 4 hours
-  session: { strategy: "jwt", maxAge:  4 * 60  },  // 240 secont
+  session: { strategy: "jwt", maxAge: 60*2 },  // 120 secont
   //session: {  strategy: 'database',   maxAge: 1, generateSessionToken: () => generateId().token(), },  // process.env.SESSION_MAX_AGE
   ...authConfig,
 
@@ -353,15 +378,14 @@ export const { handlers: { GET, POST }, auth, signIn, signOut } = NextAuth({
 
         if (parsedCredentials.success) {
           const { email, password } = parsedCredentials.data;
-           
-          //const user = await getUser(name, password);    //-- > EDW NA XTYPAW TO AUT_USERS
-          const userLogIn = await getUserLogin(email, password);
+          //const userLogIn = await getUserLogin(email, password);
+          const userLogIn = await getUserByEmail(email);         
           if (!userLogIn) return null;
-
-          // if (userLogIn && bcrypt.compareSync(password, userLogIn.passwordHash))  apo paradeigma , alloiws to pio katw
-          const passwordsMatch = true; //await bcrypt.compare(password, user.password);
+          
+          const passwordsMatch = (userLogIn && await bcrypt.compare(password, userLogIn.password));    // userLogIn.password is hashed
+          //const passwordsMatch = true; //await bcrypt.compare(password, user.password);
           if (passwordsMatch) return userLogIn;
-        }
+          }         
 
         console.log('Invalid credentials');
         return null;

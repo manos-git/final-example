@@ -54,4 +54,5 @@ compiler: {
 };
 
 
+
 module.exports = nextConfig;

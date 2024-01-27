@@ -1,15 +1,789 @@
-{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-15T18:21:37.030Z"}
-{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-15T18:21:39.384Z"}
-{"level":"info","message":"trying connect to aythenticte the user ","timestamp":"2024-01-15T18:21:52.975Z"}
-{"level":"info","message":{"database":"G://Development//Delphi2007//Projects//CM//Data//CM.GDB","host":"127.0.0.1","lowercase_keys":true,"pageSize":4096,"password":"capt@!n","port":"3050","user":"MANOS"},"timestamp":"2024-01-15T18:21:52.977Z"}
-{"level":"info","message":"connected to db! ","timestamp":"2024-01-15T18:21:53.010Z"}
-{"level":"info","message":"error on credentials","timestamp":"2024-01-15T18:21:53.041Z"}
-{"level":"info","message":"trying connect to aythenticte the user ","timestamp":"2024-01-15T18:22:07.786Z"}
-{"level":"info","message":{"database":"G://Development//Delphi2007//Projects//CM//Data//CM.GDB","host":"127.0.0.1","lowercase_keys":true,"pageSize":4096,"password":"capt@!n","port":"3050","user":"MANOS"},"timestamp":"2024-01-15T18:22:07.787Z"}
-{"level":"info","message":"connected to db! ","timestamp":"2024-01-15T18:22:07.811Z"}
-{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-15T18:22:08.140Z"}
-{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-15T18:22:08.487Z"}
-{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-15T18:23:22.681Z"}
-{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-15T18:23:22.748Z"}
-{"level":"info","message":"Home Page called ","timestamp":"2024-01-15T18:23:22.873Z"}
-{"level":"info","message":"Home Page called ","timestamp":"2024-01-15T18:23:22.882Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:08:23.791Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-18T18:08:26.210Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:08:26.555Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-18T18:08:26.869Z"}
+{"level":"info","message":"trying connect to aythenticte the user ","timestamp":"2024-01-18T18:08:48.505Z"}
+{"level":"info","message":"trying connect to aythenticte the user ","timestamp":"2024-01-18T18:09:28.635Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:09:29.034Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-18T18:09:29.356Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:28:53.339Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:28:53.406Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:28:53.550Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:28:53.557Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:40:33.638Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:40:33.660Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:40:33.976Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:40:33.988Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:57:43.585Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:57:43.627Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T18:57:43.634Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T18:57:43.637Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T19:01:38.434Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-18T19:01:38.456Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T19:01:38.542Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-18T19:01:38.551Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:30:31.150Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:30:33.050Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:30:36.071Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:30:36.293Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:36:28.448Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:36:28.761Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:37:05.311Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:37:06.864Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:37:08.976Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:37:09.288Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:37:16.948Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:37:17.888Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:37:29.825Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:37:31.532Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:37:34.171Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:37:34.428Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:38:35.984Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:38:36.414Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:38:37.583Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:38:37.855Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:43:33.008Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:43:34.711Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:43:43.107Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:43:44.442Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:44:02.639Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:44:02.922Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:47:33.411Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:47:34.486Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:47:42.650Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:47:43.109Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:47:44.245Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:47:44.609Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:50:12.590Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:50:13.715Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:50:55.166Z"}
+{"level":"info","message":"trying connect to aythenticate the user with email 'sakis@mail.com'","timestamp":"2024-01-20T17:51:19.889Z"}
+{"level":"info","message":"[getUserByEmail] --> connected to db! ","timestamp":"2024-01-20T17:51:19.929Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:51:20.393Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:51:20.874Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:54:33.051Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:54:33.289Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:58:17.096Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:58:21.281Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-20T17:58:21.778Z"}
+{"level":"info","message":"trying connect to aythenticate the user with email 'sakis@mail.com'","timestamp":"2024-01-20T17:59:20.395Z"}
+{"level":"info","message":"[getUserByEmail] --> connected to db! ","timestamp":"2024-01-20T17:59:20.431Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-20T17:59:20.800Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-20T17:59:21.234Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-23T18:36:10.504Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-23T18:36:10.570Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-23T18:36:10.751Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-23T18:36:10.761Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:56:30.904Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:56:30.940Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:56:30.946Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:56:30.951Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:57:58.683Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:58:10.236Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:58:21.777Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:58:22.096Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:58:22.432Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T08:58:22.820Z"}
+{"level":"info","message":"trying connect to aythenticate the user with email 'sakis@mail.com'","timestamp":"2024-01-25T08:58:45.471Z"}
+{"level":"info","message":"[getUserByEmail] --> connected to db! ","timestamp":"2024-01-25T08:58:45.525Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:58:49.600Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:58:51.333Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:58:59.052Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:58:59.288Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:00.575Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:00.793Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:02.923Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:03.154Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:04.508Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:04.711Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:10.253Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:10.512Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:12.267Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:12.484Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:12.567Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:13.008Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T08:59:14.185Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T08:59:14.327Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:00:45.191Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:00:45.406Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:00:59.082Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:00:59.325Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:01:00.871Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:01:01.090Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:01:14.999Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:01:15.205Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:01:16.493Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:01:16.671Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:01:21.638Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:01:22.048Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T09:01:23.215Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T09:01:23.444Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:00:04.763Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:00:05.004Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:14:48.664Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:14:48.709Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T10:14:48.858Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-25T10:14:48.865Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:23:10.156Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:23:10.799Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:23:11.300Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:23:11.504Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:23:12.749Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:23:13.009Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:23:13.620Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:23:13.837Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:54:13.757Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:54:14.090Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:54:14.992Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:54:15.208Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:54:27.810Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:54:28.184Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:54:28.943Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:54:29.215Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:55:37.354Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:55:37.655Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:57:37.362Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:57:37.647Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:59:10.255Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:59:10.981Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:59:12.661Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:59:12.827Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:59:23.864Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:59:24.306Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:59:26.892Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:59:27.254Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T10:59:27.999Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T10:59:28.249Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T11:03:57.117Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T11:03:57.457Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T11:25:33.128Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T11:25:33.845Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T11:25:35.539Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T11:25:35.732Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:09:01.738Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:09:02.384Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:09:03.588Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:09:03.750Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:11:36.380Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:11:36.978Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:13:33.933Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:13:34.094Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:13:42.881Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:13:43.015Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:15:25.757Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:15:26.317Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:15:34.418Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:15:34.587Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:15:36.324Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:15:36.460Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:38.420Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:39.161Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:43.725Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:43.878Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:44.513Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:44.646Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:45.081Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:45.257Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:45.645Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:45.791Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:46.261Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:46.387Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:46.912Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:47.052Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:47.529Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:47.660Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:47.969Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:48.088Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:48.531Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:48.658Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:48.964Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:49.082Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:49.283Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:49.404Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:49.598Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:49.719Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:17:49.898Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:17:50.059Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:31:12.335Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:31:13.041Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:31:13.306Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:31:13.498Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:31.270Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:32.067Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:32.543Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:32.714Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:35.435Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:35.615Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:38.102Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:38.253Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:38.753Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:38.902Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:32:39.403Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:32:39.550Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:35:06.882Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:35:07.926Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:35:08.251Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:35:08.420Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:37:12.103Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:37:12.818Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:37:13.165Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:37:13.311Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T13:37:14.149Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T13:37:14.310Z"}
+{"level":"info","message":"Products GET called ","timestamp":"2024-01-25T14:10:19.444Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:10:21.613Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:10:22.545Z"}
+{"level":"info","message":"Products GET called ","timestamp":"2024-01-25T14:10:26.316Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:10:26.426Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:10:26.608Z"}
+{"level":"info","message":"Products GET called ","timestamp":"2024-01-25T14:10:27.050Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:10:27.172Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:10:27.321Z"}
+{"level":"info","message":"Products GET called ","timestamp":"2024-01-25T14:10:27.639Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:10:27.744Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:10:27.879Z"}
+{"level":"info","message":"Products GET called ","timestamp":"2024-01-25T14:10:28.133Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:10:28.240Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:10:28.444Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:11:59.542Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:00.357Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:05.946Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:06.107Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:06.427Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:06.617Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:06.618Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:06.841Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:07.788Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:07.993Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:08.043Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:08.193Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:08.484Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:08.665Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:08.750Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:08.915Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:09.017Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:09.171Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:09.334Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:09.477Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:09.806Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:09.963Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:12:10.203Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:12:10.331Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T14:17:45.088Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T14:17:45.282Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T17:52:35.332Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T17:52:37.245Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T17:52:38.832Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T17:52:39.042Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T17:52:53.240Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T17:52:53.536Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-25T17:52:58.352Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-25T17:52:58.501Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:42:39.307Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:42:41.402Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:42:43.784Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:42:43.965Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:42:51.242Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:42:51.439Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:42:52.247Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:42:52.425Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:43:19.188Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:43:19.480Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:43:22.328Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:43:22.522Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:43:22.625Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:43:22.756Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:43:22.826Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:43:22.980Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:49:59.753Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:50:00.115Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:50:01.546Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:50:01.764Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:50:01.975Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:50:02.361Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T09:50:02.458Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T09:50:02.639Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:30:18.152Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:30:18.450Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:30:19.298Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:30:19.505Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:30:19.577Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:30:19.762Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:30:57.807Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:30:58.122Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:22.566Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:22.846Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:22.894Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:23.059Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:25.785Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:26.041Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:26.964Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:27.165Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:27.227Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:27.420Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:27.492Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:27.759Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:27.788Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:27.931Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:36:51.592Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:36:51.757Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:37:00.693Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:37:00.851Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:40:14.383Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:40:14.784Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:40:15.004Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:40:15.266Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:40:16.646Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:40:16.983Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:45:32.546Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:45:32.930Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:48:04.203Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:48:04.531Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:48:10.839Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:48:11.008Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T10:48:12.978Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T10:48:13.285Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:09:04.723Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:09:04.881Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:09:05.569Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:09:05.737Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:09:05.963Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:09:06.170Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:09:06.900Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:09:07.047Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:13:22.504Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:13:23.111Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:15:54.029Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:15:54.364Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:15:56.054Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:15:56.801Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:15:57.885Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:15:58.194Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:06.554Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:06.900Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:06.902Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:07.183Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:11.878Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:12.330Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:12.442Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:12.600Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:14.412Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:14.620Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:14.734Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:15.135Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:15.179Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:15.349Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:15.508Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:15.782Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:15.884Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:16.153Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:16.226Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:16.446Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:17.084Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:17.310Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:17.482Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:17.665Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:17.861Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:18.123Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:18.200Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:18.379Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:18.516Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:18.696Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:19.067Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:19.274Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:19.410Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:19.589Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:19.746Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:20.060Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:20.228Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:20.417Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:20.552Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:20.721Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:20.955Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:21.129Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:21.157Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:21.363Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:21.466Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:21.722Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:21.791Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:22.109Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:22.110Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:22.445Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:22.489Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:22.682Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:20:22.948Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:20:23.142Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T11:24:46.604Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T11:24:46.744Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:19:50.396Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:19:51.103Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:19:51.805Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:19:52.010Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:19:59.924Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:20:00.193Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:20:02.399Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:20:02.598Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:20:02.689Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:20:02.760Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:20:02.900Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:20:03.325Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:20:06.189Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:20:07.077Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:27:43.796Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:27:44.399Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:27:45.611Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:27:45.781Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:27:59.943Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:00.273Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:28:02.675Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:02.828Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:28:03.074Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:03.218Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:28:03.360Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:03.496Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:28:05.421Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:06.418Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:28:06.629Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:28:06.846Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:31:22.917Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:31:24.032Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:31:24.412Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:31:24.612Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:31:24.742Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:31:24.998Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:31:26.715Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:31:27.415Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:41.435Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:42.336Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:43.080Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:43.335Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:49.261Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:49.881Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:49.957Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:50.157Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:50.586Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:50.798Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:50.895Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:51.076Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:51.107Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:51.256Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:51.437Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:51.709Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:51.733Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:51.938Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:51.975Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:52.167Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:52.255Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:52.501Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:52.613Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:52.742Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:52.779Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:52.991Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:53.053Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:34:53.241Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:53.268Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:34:53.433Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:45:05.463Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:45:06.544Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:45:07.137Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:45:07.360Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:45:09.053Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:45:10.077Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T12:45:10.354Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T12:45:10.617Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:23:15.550Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:23:17.486Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:23:20.004Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:23:20.178Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:23:32.278Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:23:32.577Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:23:40.861Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:23:41.001Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:23:41.208Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:23:41.372Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:31:48.303Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:31:48.586Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:31:49.660Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:31:49.975Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:39:27.830Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:39:28.131Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:39:33.852Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:39:34.145Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:45.231Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:45.547Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:45.743Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:45.879Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:48.775Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:49.101Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:50.478Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:50.682Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:50.953Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:51.092Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:42:51.353Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:42:51.549Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:51:44.697Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:51:44.990Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:51:48.313Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:51:48.528Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:51:50.173Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:51:50.948Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:51:51.413Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:51:51.578Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:52:30.951Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:52:31.164Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:52:31.556Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:52:31.735Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:52:31.996Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:52:32.192Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:52:32.321Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:52:32.571Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:53:50.089Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:53:50.791Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:53:52.423Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:53:52.610Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:54:02.321Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:54:02.600Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:54:11.669Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:54:11.820Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:54:11.860Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:54:12.057Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T16:54:14.040Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T16:54:14.355Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:01:21.792Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:01:22.222Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:18:18.337Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:18:18.858Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:18:21.454Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:18:22.393Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:18:23.042Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:18:23.225Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:20:10.716Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:20:11.502Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-26T17:20:14.751Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-26T17:20:15.435Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:34:28.165Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:34:30.294Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:34:36.968Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:34:37.305Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:34:47.331Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:34:47.750Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:34:50.138Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:34:50.348Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:34:50.483Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:34:50.675Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:47:37.665Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:47:38.049Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:47:42.543Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:47:42.736Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:47:43.161Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:47:43.320Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:59:53.474Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:59:54.211Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T07:59:55.837Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T07:59:56.030Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:00:02.444Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:00:02.745Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:00:07.866Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:00:08.026Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:00:08.234Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:00:08.389Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:00:10.014Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:00:10.354Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:02:51.425Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:02:51.467Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-27T08:02:51.996Z"}
+{"level":"info","message":"Home Page called ","timestamp":"2024-01-27T08:02:52.008Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:06:15.333Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:06:16.102Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:06:17.339Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:06:17.501Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:06:23.857Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:06:24.213Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:06:28.246Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:06:28.389Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:06:28.701Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:06:28.858Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:12.541Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:12.964Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:13.133Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:13.260Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:14.484Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:14.642Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:15.451Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:15.826Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:52.258Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:52.489Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:52.610Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:52.843Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:52.868Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:53.035Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:53.054Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:53.301Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:53.302Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:53.503Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:53.541Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:53.772Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:53.881Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:54.034Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:08:54.035Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:08:54.188Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:11:20.852Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:11:21.258Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:11:25.734Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:11:25.864Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:11:26.339Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:11:26.494Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:11:26.706Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:11:26.874Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:11:28.209Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:11:28.550Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:03.846Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:04.510Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:06.234Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:06.408Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:18.593Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:18.951Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:19.016Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:19.434Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:19.757Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:19.979Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:20.474Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:20.650Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:21.227Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:21.412Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:22.215Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:22.370Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:37.278Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:37.421Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:44.101Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:44.300Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:44.395Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:44.449Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:46.278Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:46.580Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:48.255Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:48.441Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:48.714Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:48.897Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:48.946Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:49.119Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:49.218Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:49.285Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:49.426Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:49.612Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:49.681Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:49.925Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:50.100Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:15:50.246Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:50.336Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:15:50.382Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:13.548Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:13.678Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:29.932Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:30.147Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:30.224Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:30.465Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:30.504Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:30.726Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:30.785Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:30.964Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:30.996Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:31.208Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:31.300Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:31.462Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:31.518Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:31.736Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:31.859Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:31.902Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:31.983Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:32.067Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:16:32.126Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:16:32.278Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:45.212Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:45.577Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:45.749Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:45.931Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:51.441Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:51.577Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:51.958Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:52.104Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:53.851Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:54.200Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:56.928Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:57.086Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:57.464Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:57.612Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:57.798Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:57.955Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:58.249Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:58.422Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:58.482Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:58.661Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:58.724Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:58.866Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:59.055Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:59.257Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:59.450Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:51:59.669Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:59.748Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:51:59.817Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:00.084Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:00.231Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:38.844Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:39.014Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:39.449Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:39.577Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:39.983Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:40.121Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:40.271Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:40.490Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:40.580Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:40.729Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:40.859Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:41.035Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:52:49.857Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:52:50.049Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:08.680Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:08.844Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:26.438Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:26.575Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:34.516Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:34.735Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:35.615Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:35.795Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:46.245Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:46.499Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:53:53.118Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:53:53.259Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:01.161Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:01.380Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:01.449Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:01.657Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:02.751Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:03.060Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:03.314Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:03.509Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:03.565Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:03.723Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:03.914Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:04.136Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:04.176Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:04.428Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:04.525Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:04.586Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:04.668Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:04.951Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:04.957Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:05.159Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:05.221Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:05.372Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:05.463Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:05.663Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:05.696Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:05.909Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:05.978Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:06.238Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:06.337Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:06.409Z"}
+{"level":"info","message":"Dashboard Page called ","timestamp":"2024-01-27T08:54:06.500Z"}
+{"level":"info","message":"fetchLatestInvoices called ","timestamp":"2024-01-27T08:54:06.719Z"}

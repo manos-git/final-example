@@ -13,13 +13,27 @@ export default auth((req) => {
 })
 */
 
-import { NextResponse, type NextRequest } from "next/server";  // for use cors
+import { NextResponse, type NextRequest } from "next/server";  // for use cors & ratelimiter
+import { rateLimiter } from './app/lib/rate-limiter';
 
 export const config = {
   // https://nextjs.org/docs/app/building-your-application/routing/middleware#matcher
   //matcher: ['/((?!api|_next/static|_next/image|.*\\.png$).*)'],
   matcher: ['/((?!api|_next/static|_next/image|.*\\.png$|.*\\.jpg$).*)'],
 };
+
+/* // manos --> for rate limiter
+export  async function middleware(request: NextRequest) {
+  // You could alternatively limit based on user ID or similar
+  const ip = request.ip ?? '127.0.0.1';
+  const { success, pending, limit, reset, remaining } = await rateLimiter.limit(
+    ip
+  );
+  return success
+    ? NextResponse.next()
+    : NextResponse.redirect(new URL('/', request.url));   // //blocked
+}
+*/
 
 
 // Config Cors

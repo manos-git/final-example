@@ -16,6 +16,7 @@ enum UserRole {
 }
 */
 
+
 export type  User = {
   id:  string; 
   name: string;          // --> dispname: string;
@@ -35,6 +36,10 @@ export type  User = {
   refreshToken?: string;
   accessTokenExpires?: number;
 };
+
+
+
+
 
 export type ErrorCM = {errCode: string, errMsg: string};
 
@@ -115,3 +120,4 @@ export type InvoiceForm = {
   amount: number;
   status: 'pending' | 'paid';
 };
+

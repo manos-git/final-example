@@ -280,13 +280,29 @@ https://nextjs.org/docs/pages/building-your-application/configuring/custom-serve
 deploying on iisnode server
 https://medium.com/@jhnmugambi/deploying-nextjs-app-with-next-auth-on-iis-c1baec3cb53c
 
+deploying docker
+https://nextjs.org/docs/pages/building-your-application/deploying
+
+Continuous Integration (CI) Build Caching
+https://nextjs.org/docs/pages/building-your-application/deploying/ci-build-caching
 *******************************************************************************************
 Rate limits with upstash
 https://levelup.gitconnected.com/secure-your-api-endpoints-in-next-js-13-with-upstash-b305da433e13
+https://www.dhairyashah.dev/posts/implementing-rate-limiting-for-nextjs-api-routes-with-upstash-and-redis/
 *******************************************************************************************
+Email
+https://medium.com/@abilsavio/email-contact-form-using-nextjs-app-router-60c29fe70644
+https://blog.logrocket.com/streamline-email-creation-react-email/
+https://dev.to/thevinitgupta/crafting-stunning-emails-with-nextjs-and-tailwind-css-529a
+
+*******************************************************************************************
+
+
 -when a folder starts with _ then router ignore it.
 -all components inside folder app is server components and logged (console.log) appears only in terminal and not in broser tools (elements). 
 for that case must write on the top "use client".
+- Calling session on Server Side, await auth()
+- Calling session on Client Side, useSession()
 - inside <main --> ... bg-[radial-gradient(ellipse_at_top, _var(--tw-gradient-stops))] from-sky-400 to-blue-800">
 *******************************************************************************************
 https://www.youtube.com/watch?v=1MTyCvS05V4
@@ -299,19 +315,29 @@ the right Authjs.dev NOT nextAuth
 2.54.00   ... continue... extent token , jwt
 first extent jwt then session ( custom adaptor)
 
+
+authjs v5
+https://medium.com/@youngjun625/next-js14-nextauth-v5-1-signin-signout-7e30cce52e7f
+https://medium.com/@youngjun625/next-js14-nextauth-v5-2-session-update-b977cb6afd47
+
 session & jwt
 https://stackoverflow.com/questions/77574338/issue-in-next-auth-v5-session-in-next-js-14
 allos tropos
 https://javascript.plainenglish.io/seamless-authentication-and-authorization-in-nextjs-leveraging-external-jwts-in-next-auth-1af1ef8fd7d8
 kai ayto --> https://remaster.com/blog/next-auth-jwt-session
 
+session update
+https://medium.com/@youngjun625/next-js14-nextauth-v5-2-session-update-b977cb6afd47
+
+Magik Links
+https://medium.com/@uriser/authentication-in-next-js-with-auth-js-nextauth-5-b74e3ae18ab8
 
 ***********************************
 AUTH DB
 CREATE DOMAIN auth_role
 AS varchar(10) CHECK (value IS NULL or VALUE IN ('su','admin','company','entoleas','model','user'));
 
-CCREATE TABLE AUTH_USERS
+CREATE TABLE AUTH_USERS
 (
   ID integer NOT NULL,
   NAME varchar(255),
@@ -322,10 +348,10 @@ CCREATE TABLE AUTH_USERS
   "ROLE" AUTH_ROLE,
   USER_ID INTDEF0,
   DISPLAY_NAME varchar(20),
+  CREATED_AT DATETIME_NOW NOT NULL,
   CONSTRAINT AUTH_USERS_PK PRIMARY KEY (ID),
   CONSTRAINT AUTH_USERS_EMAIL_UK UNIQUE (EMAIL)
 );
-
 CREATE INDEX IDX_AUTH_USERS_ID ON AUTH_USERS (USER_ID);
 ***********************************
 
@@ -335,3 +361,7 @@ https://stackoverflow.com/questions/77547870/is-there-special-function-to-call-f
 
 https://medium.com/@uriser/authentication-in-next-js-with-auth-js-nextauth-5-b74e3ae18ab8
 resend for email
+https://www.brevo.com/pricing/
+
+Deploy
+https://www.saotn.org/install-nodejs-iisnode-ghost-on-windows-server-iis/

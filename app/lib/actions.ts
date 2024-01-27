@@ -8,7 +8,11 @@ import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 import { getConn,  queryRun, statmentExec, closeConn } from './firebird';
 
-
+//manos
+import { RegisterSchema } from './schemas';
+import bcrypt from "bcrypt";
+import { userEmailUnique, createAuthUser } from './data-cm-authuser';
+import { User } from './definitions-cm';
 
 const FormSchema = z.object({
   id: z.string(),
@@ -146,3 +150,96 @@ export async function authenticate(
     throw error; //otherwise not redirect
   }
 }
+
+
+// Register 
+/*
+export async function register(
+  prevState: string | undefined,
+  formData: FormData,
+) {
+  try {
+    await register('credentials', formData);
+  } catch (error) {
+    if (error instanceof AuthError) {
+      switch (error.type) {
+        case 'CredentialsSignin':
+          return 'Invalid credentials.';
+        default:
+          return 'Something went wrong.';
+      }
+    }
+    throw error; //otherwise not redirect
+  }
+}
+*/
+
+// This is temporary
+//export type CustomState = {
+//  error: boolean| null;
+//  message?: string | null;
+//};
+
+export const createUser = async (prevState: any, formData: FormData) => {  
+  // Validate form fields using Zod
+  const validatedFields = RegisterSchema.safeParse({
+    email: formData.get('email'),
+    password: formData.get('password'),
+    name: formData.get('name'),
+  });
+
+  // If form validation fails, return errors early. Otherwise, continue.
+  if (!validatedFields.success) {
+    return {
+      //errors: validatedFields.error.flatten().fieldErrors,
+      error: true,
+      message: 'Missing Fields. Failed to Create User.',
+    };
+  }
+
+  const {email, password, name} = validatedFields.data;
+  const hashedPassword  = await bcrypt.hash(password, 10);
+  
+  // check if email already taken
+  const existingEmail = await userEmailUnique(email);
+  if (existingEmail) {
+    return {  error: true, message : "Email, already in use." }
+  }
+  
+  const userCreated = await createAuthUser(email, hashedPassword, name);
+  if (!userCreated) {
+    return {  error: true, message : "Error creating User." }
+  }
+  
+  //return { error: false, message : "Success User created, email send!" }
+  // Revalidate the cache for the invoices page and redirect the user.
+  //revalidatePath('/dashboard/invoices');
+  redirect('/login');
+};
+
+
+
+
+
+/*
+  // Prepare data for insertion into the database
+  const { email, password, name } = validatedFields.data;
+  const date = new Date().toISOString().split('T')[0];
+  // Insert data into the database
+  try {
+    //sqlIns = ` INSERT INTO invoices (customer_id, amount, status, date)  VALUES (${customerId}, ${amountInCents}, ${status}, ${date}) `;
+    const sqlIns = ` INSERT INTO invoices (customer_id, amount, status, date)  VALUES (?, ?,?,?) `;
+    const db = await getConn();    
+    await statmentExec(db, sqlIns, [customerId, amountInCents, status, date] )  ;
+  } catch (error) {
+    // If a database error occurs, return a more specific error.
+    return {
+      message: 'Database Error: Failed to Create Invoice.',
+    };
+  }
+
+  // Revalidate the cache for the invoices page and redirect the user.
+  revalidatePath('/dashboard/invoices');
+  redirect('/dashboard/invoices');
+  */
+

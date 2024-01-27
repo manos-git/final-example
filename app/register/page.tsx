@@ -1,9 +1,8 @@
+// manos
 import CMLogo from '@/app/ui/cm-logo';
-import LoginForm from '@/app/ui/login-form';
+import RegisterForm from '@/app/ui/register-form';
 
-import Link from 'next/link';
-
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
@@ -12,11 +11,7 @@ export default function LoginPage() {
             <CMLogo />
           </div>
         </div>
-        <LoginForm />
-        <div>
-          <Link href="/register">Dont have an acoount?</Link>
-        </div>
-
+        <RegisterForm />
       </div>
     </main>
   );
